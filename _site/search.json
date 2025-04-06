@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Aid Worker Security Incidents",
+    "section": "",
+    "text": "“Helping others should never make you a target.”\n\nAnd yet — from dusty roads in South Sudan to hospitals in Gaza, aid workers are being shot at, kidnapped, and killed.\nThis project is not just about data.\nIt’s about the people behind the data.\n\n\n\nSince 1997, thousands of violent incidents targeting humanitarian staff have been recorded. The risk has grown, the world has changed — and the people delivering life-saving aid are now often caught in the crossfire.\nIn this project, we ask:\n\n🕰️ When did this rise in violence begin?\n🌍 Where are these attacks happening?\n👥 Who is being harmed — and how?\n🎯 What can be done to protect them?\n\n\n\n\n\nThis site is structured like a four-part visual story:\n\n\n\nChapter\nWhat You’ll Discover\n\n\n\n\n1. Temporal Trends\nThe timeline of rising risk\n\n\n2. Geographic Hotspots\nWhere aid work turns deadly\n\n\n3. Victims & Attacks\nWho is being harmed — and how\n\n\n4. Final Reflections\nWhat the data teaches us about protecting lives\n\n\n\n\n\n\n\nThe mission of humanitarian work is simple: to help.\nBut the mission can’t be fulfilled if the helpers are unsafe.\nThis story — told with real-world data and powerful visuals — aims to reframe the conversation, inform smarter decisions, and protect those who protect others.\n\n\n\n\nThis project was created as part of a Data Science & Storytelling competition. It blends technical analysis with narrative to shine a light on a problem too often overlooked.\nThank you for reading — and for caring."
+  },
+  {
+    "objectID": "trends.html",
+    "href": "trends.html",
+    "title": "🕰️ Rising Risk: A Timeline of Humanitarian Harm",
+    "section": "",
+    "text": "Since 1997, aid workers have faced growing danger in their efforts to deliver life-saving assistance. But how has this risk evolved over time?\nUsing event-level data from thousands of attacks, we trace the shifting timeline of threats — and reveal a troubling trend."
+  },
+  {
+    "objectID": "trends.html#the-question",
+    "href": "trends.html#the-question",
+    "title": "🕰️ Rising Risk: A Timeline of Humanitarian Harm",
+    "section": "🚨 The Question",
+    "text": "🚨 The Question\nHas the world become more dangerous for humanitarians?\nTo find out, we plot every known attack from 1997 to the present — each one a story of danger in the line of duty."
+  },
+  {
+    "objectID": "trends.html#the-data-incidents-by-year",
+    "href": "trends.html#the-data-incidents-by-year",
+    "title": "🕰️ Rising Risk: A Timeline of Humanitarian Harm",
+    "section": "📊 The Data: Incidents by Year",
+    "text": "📊 The Data: Incidents by Year"
+  },
+  {
+    "objectID": "trends.html#what-the-trend-reveals",
+    "href": "trends.html#what-the-trend-reveals",
+    "title": "🕰️ Rising Risk: A Timeline of Humanitarian Harm",
+    "section": "🔍 What the Trend Reveals",
+    "text": "🔍 What the Trend Reveals\nThe numbers tell a powerful story:\n\n1997–2002: Aid work was dangerous — but relatively infrequent attacks.\n2003–2005: Violence surges after the invasion of Iraq and conflict escalation in Afghanistan.\n2013: A clear peak — the rise of civil war in Syria and unrest across Sub-Saharan Africa.\n2018–Present: A troubling new normal — attacks have stayed persistently high.\n\nWe’re not just seeing isolated incidents. We’re seeing systemic patterns tied to global unrest."
+  },
+  {
+    "objectID": "trends.html#data-meets-decision-making",
+    "href": "trends.html#data-meets-decision-making",
+    "title": "🕰️ Rising Risk: A Timeline of Humanitarian Harm",
+    "section": "🧭 Data Meets Decision-Making",
+    "text": "🧭 Data Meets Decision-Making\nBy identifying when threats escalate, aid agencies can:\n\nAnticipate future high-risk years based on conflict cycles\nStrengthen protocols in advance\nAllocate resources for staff safety training and evacuation planning\n\nThis isn’t just analysis — it’s a call to protect those who protect others."
+  },
+  {
+    "objectID": "trends.html#whats-next",
+    "href": "trends.html#whats-next",
+    "title": "🕰️ Rising Risk: A Timeline of Humanitarian Harm",
+    "section": "🧶 What’s Next?",
+    "text": "🧶 What’s Next?\nNow that we understand when aid workers are most at risk, let’s explore the next critical question:\n👉 Where is it most dangerous to help?"
+  },
+  {
+    "objectID": "geography.html",
+    "href": "geography.html",
+    "title": "🌍 Mapping the Danger",
+    "section": "",
+    "text": "Knowing when aid workers are attacked is important — but location matters even more. Some regions are consistently hostile. Others erupt unpredictably.\nThis section explores the geography of harm using event-level data. Each point on the map represents a location where humanitarian workers were attacked — and in many cases, killed or kidnapped.\nBy mapping these events, we expose patterns of instability that traditional headlines often miss."
+  },
+  {
+    "objectID": "geography.html#what-the-map-reveals",
+    "href": "geography.html#what-the-map-reveals",
+    "title": "🌍 Mapping the Danger",
+    "section": "🧭 What the Map Reveals",
+    "text": "🧭 What the Map Reveals\nThe map confirms what many field workers already know:\n\nSub-Saharan Africa and Middle East are hotspots for attacks\nClusters appear in Afghanistan, DR Congo, Syria, and South Sudan\nSome remote regions (e.g., Mali, Central African Republic) are overrepresented given their size\n\nThis geography of risk allows aid agencies to plan region-specific safety protocols."
+  },
+  {
+    "objectID": "geography.html#not-just-dots-on-a-map",
+    "href": "geography.html#not-just-dots-on-a-map",
+    "title": "🌍 Mapping the Danger",
+    "section": "🚨 Not Just Dots on a Map",
+    "text": "🚨 Not Just Dots on a Map\nEach marker represents not just a location — but an incident of violence. Visualizing them on a map makes the scale and spread of danger both tangible and unignorable."
+  },
+  {
+    "objectID": "victims.html",
+    "href": "victims.html",
+    "title": "Victims & Attack Patterns",
+    "section": "",
+    "text": "Humanitarian workers go where others can’t — into war zones, disaster areas, and refugee camps.\nBut when violence erupts, who pays the highest price?\nThis section confronts the human toll of these attacks.\nNot just where or when they happen — but who they hurt, how they suffer, and what it means for the future of humanitarian work.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe chart speaks volumes: national staff are overwhelmingly more affected by security incidents than their international counterparts.\nThey are the logisticians, translators, and local health workers — often the first on the scene and the last to leave.\n\nThey take the same risks, but don’t always get the same protection, training, or recognition.\n\nThis imbalance raises an ethical question:\nAre we doing enough to protect those who carry the heaviest burden?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBeing wounded is the most common outcome — but the number of people killed or kidnapped is staggering.\nThese aren’t numbers. These are stories of: - Drivers ambushed on rural roads - Nurses caught in crossfire - Field officers abducted while delivering food\nEach one reflects a breach of humanitarian neutrality — and a growing disregard for international law.\n\n\n\n\nUnderstanding who gets hurt, and how, is more than academic. It’s the foundation for: - Smarter field protocols - Targeted safety investments - Ethical hiring and risk-sharing policies\nThis data forces us to face a hard truth:\nRisk is not equally shared — but it can be more fairly managed.\n\n\n\n\nWe’ve followed this story through time, space, and lives affected.\nNow, we turn to the final — and most important — chapter:\n👉 What should be done?"
+  },
+  {
+    "objectID": "victims.html#the-invisible-majority",
+    "href": "victims.html#the-invisible-majority",
+    "title": "Victims & Attack Patterns",
+    "section": "",
+    "text": "The chart speaks volumes: national staff are overwhelmingly more affected by security incidents than their international counterparts.\nThey are the logisticians, translators, and local health workers — often the first on the scene and the last to leave.\n\nThey take the same risks, but don’t always get the same protection, training, or recognition.\n\nThis imbalance raises an ethical question:\nAre we doing enough to protect those who carry the heaviest burden?"
+  },
+  {
+    "objectID": "victims.html#from-risk-to-reality",
+    "href": "victims.html#from-risk-to-reality",
+    "title": "Victims & Attack Patterns",
+    "section": "",
+    "text": "Being wounded is the most common outcome — but the number of people killed or kidnapped is staggering.\nThese aren’t numbers. These are stories of: - Drivers ambushed on rural roads - Nurses caught in crossfire - Field officers abducted while delivering food\nEach one reflects a breach of humanitarian neutrality — and a growing disregard for international law."
+  },
+  {
+    "objectID": "victims.html#why-it-matters",
+    "href": "victims.html#why-it-matters",
+    "title": "Victims & Attack Patterns",
+    "section": "",
+    "text": "Understanding who gets hurt, and how, is more than academic. It’s the foundation for: - Smarter field protocols - Targeted safety investments - Ethical hiring and risk-sharing policies\nThis data forces us to face a hard truth:\nRisk is not equally shared — but it can be more fairly managed."
+  },
+  {
+    "objectID": "victims.html#whats-next",
+    "href": "victims.html#whats-next",
+    "title": "Victims & Attack Patterns",
+    "section": "",
+    "text": "We’ve followed this story through time, space, and lives affected.\nNow, we turn to the final — and most important — chapter:\n👉 What should be done?"
+  },
+  {
+    "objectID": "conclusions.html",
+    "href": "conclusions.html",
+    "title": "Final Reflections",
+    "section": "",
+    "text": "Across time, geography, and human lives, we’ve traced a painful pattern:\n\nAttacks on aid workers are increasing.\nThese attacks are globally widespread, but cluster in specific high-risk regions.\nThe majority of victims are national staff — often wounded, kidnapped, or killed in the line of duty.\n\nEach visualization gave us insight, but together they reveal a broader truth:\n\nAid workers efforts are becoming more dangerous — and the risk is not equally shared.\n\n\n\n\nAid workers in the field"
+  },
+  {
+    "objectID": "conclusions.html#thank-you-for-reading",
+    "href": "conclusions.html#thank-you-for-reading",
+    "title": "Final Reflections",
+    "section": "🙏 Thank You for Reading",
+    "text": "🙏 Thank You for Reading\nThis story was told with the help of thousands of rows of real-world data.\nBut behind each row is something more powerful than numbers:\nCourage. Loss. And the urgent need for change.\n\nLet’s not just read the data.\nLet’s remember the people behind it."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "📘 External Reports / Background Information\n\nInternational Committee of the Red Cross. Fourth Geneva Convention Relative to the Protection of Civilian Persons in Time of War.\nUnited Nations Office for the Coordination of Humanitarian Affairs (UNOCHA). Humanitarian Principles. https://www.unocha.org/our-work/humanitarian-principles\n\n\n\n\n📸 Image Credits\n\n“Image on the home page” Source on SEARCHINFORM\n“Aid workers in the field” Source on United Nations\n“Helping hand in crisis” Source on dreamtime\n“Light through cracks” by Source on Adobe Stock\n\n\n\n\n🧠 Project Context\nThis website was created for the Scholarship Competition: Data Visualization & Storytelling as part of the DSAN program at Georgetown University."
+  },
+  {
+    "objectID": "index.html#whats-the-story",
+    "href": "index.html#whats-the-story",
+    "title": "Aid Worker Security Incidents",
+    "section": "",
+    "text": "Since 1997, thousands of violent incidents targeting humanitarian staff have been recorded. The risk has grown, the world has changed — and the people delivering life-saving aid are now often caught in the crossfire.\nIn this project, we ask:\n\n🕰️ When did this rise in violence begin?\n🌍 Where are these attacks happening?\n👥 Who is being harmed — and how?\n🎯 What can be done to protect them?"
+  },
+  {
+    "objectID": "index.html#how-to-read-this-site",
+    "href": "index.html#how-to-read-this-site",
+    "title": "Aid Worker Security Incidents",
+    "section": "",
+    "text": "This site is structured like a four-part visual story:\n\n\n\nChapter\nWhat You’ll Discover\n\n\n\n\n1. Temporal Trends\nThe timeline of rising risk\n\n\n2. Geographic Hotspots\nWhere aid work turns deadly\n\n\n3. Victims & Attacks\nWho is being harmed — and how\n\n\n4. Final Reflections\nWhat the data teaches us about protecting lives"
+  },
+  {
+    "objectID": "index.html#why-it-matters",
+    "href": "index.html#why-it-matters",
+    "title": "Aid Worker Security Incidents",
+    "section": "",
+    "text": "The mission of humanitarian work is simple: to help.\nBut the mission can’t be fulfilled if the helpers are unsafe.\nThis story — told with real-world data and powerful visuals — aims to reframe the conversation, inform smarter decisions, and protect those who protect others."
+  },
+  {
+    "objectID": "index.html#a-note-from-the-author",
+    "href": "index.html#a-note-from-the-author",
+    "title": "Aid Worker Security Incidents",
+    "section": "",
+    "text": "This project was created as part of a Data Science & Storytelling competition. It blends technical analysis with narrative to shine a light on a problem too often overlooked.\nThank you for reading — and for caring."
+  }
+]

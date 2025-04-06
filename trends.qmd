@@ -1,0 +1,81 @@
+---
+title: "🕰️ Rising Risk: A Timeline of Humanitarian Harm"
+format: html
+---
+
+Since 1997, aid workers have faced growing danger in their efforts to deliver life-saving assistance. But how has this risk evolved over time?
+
+Using event-level data from thousands of attacks, we trace the shifting timeline of threats — and reveal a troubling trend.
+
+---
+
+## 🚨 The Question
+
+**Has the world become more dangerous for humanitarians?**  
+To find out, we plot every known attack from 1997 to the present — each one a story of danger in the line of duty.
+
+---
+
+## 📊 The Data: Incidents by Year
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+
+# Load and prepare data
+df <- read_csv("security_incidents.csv")
+
+yearly_counts <- df %>%
+  group_by(Year) %>%
+  summarise(Incidents = n())
+
+# Plot
+p <- ggplot(yearly_counts, aes(x = Year, y = Incidents)) +
+  geom_col(fill = "#e63946") +
+  labs(
+    title = "Aid Worker Attacks, 1997–Present",
+    subtitle = "Each bar represents the number of recorded security incidents in a year",
+    x = "Year",
+    y = "Number of Incidents"
+  ) +
+  theme_minimal()
+
+ggplotly(p)
+```
+
+
+---
+
+## 🔍 What the Trend Reveals
+
+The numbers tell a powerful story:
+
+- **1997–2002**: Aid work was dangerous — but relatively infrequent attacks.
+- **2003–2005**: Violence surges after the invasion of Iraq and conflict escalation in Afghanistan.
+- **2013**: A clear peak — the rise of civil war in Syria and unrest across Sub-Saharan Africa.
+- **2018–Present**: A troubling new normal — attacks have stayed persistently high.
+
+We’re not just seeing isolated incidents. We’re seeing **systemic patterns** tied to global unrest.
+
+---
+
+## 🧭 Data Meets Decision-Making
+
+By identifying **when** threats escalate, aid agencies can:
+
+- **Anticipate** future high-risk years based on conflict cycles
+- **Strengthen protocols** in advance
+- **Allocate resources** for staff safety training and evacuation planning
+
+This isn’t just analysis — it’s **a call to protect those who protect others.**
+
+---
+
+## 🧶 What’s Next?
+
+Now that we understand *when* aid workers are most at risk, let’s explore the next critical question:
+
+👉 [Where](geography.qmd) is it most dangerous to help?
+

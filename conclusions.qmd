@@ -1,0 +1,81 @@
+---
+title: "Final Reflections"
+format: html
+---
+
+# 🧠 From Data to Decisions
+
+Across time, geography, and human lives, we’ve traced a painful pattern:
+
+- Attacks on aid workers are **increasing**.
+- These attacks are **globally widespread**, but cluster in specific high-risk regions.
+- The **majority of victims** are **national staff** — often wounded, kidnapped, or killed in the line of duty.
+
+Each visualization gave us insight, but together they reveal a broader truth:
+
+> **Aid workers efforts are becoming more dangerous — and the risk is not equally shared.**
+
+![Aid workers in the field](img/aid_workers.png)
+
+---
+
+# 🧠 What We Learned
+
+This was never just about data. It was about what the data reveals when you look at it long enough:
+
+- That **violence against aid workers is rising**, not falling.
+- That this violence is **unevenly distributed**, hitting the same fragile regions again and again.
+- That **national staff** — those who are closest to the mission — are also those who are most often left behind when danger strikes.
+
+Behind every data point is a moment. Behind every spike, a story.
+
+---
+
+# 🎯 What Should Be Done?
+
+![](img/helping_hands.png)
+
+This isn’t where the story ends. This is the part where we take what we’ve seen — and decide what to do next.
+
+### 🛡️ Protect Local Staff, Not Just International Ones
+
+They take the same risks. They deserve the same security, training, and escape routes.
+
+### 📊 Use History to Prepare for the Future
+
+We now know that violence follows patterns — conflict flare-ups, election years, regional instability.  
+**Let’s not wait to be surprised.**
+
+### 📢 Demand Respect for Humanitarian Law
+
+The increasing normalization of attacks on aid workers must not be met with silence.  
+The data speaks — but it’s up to us to make sure someone listens.
+
+---
+
+# 🌍 Why This Matters
+
+Aid workers step into chaos with nothing but hope and a mission to help.
+
+They do not wear armor.  
+They do not carry weapons.  
+Their only protection is the belief that **helping others should never make you a target**.
+
+And yet — time after time — that belief is betrayed.
+
+This project used data to show where that betrayal happens.  
+Your next job — our next job — is to use those insights to change the ending.
+
+---
+
+## 🙏 Thank You for Reading
+
+This story was told with the help of thousands of rows of real-world data.  
+But behind each row is something more powerful than numbers:  
+**Courage. Loss. And the urgent need for change.**
+
+![](img/light_through_cracks.jpeg)
+
+Let’s not just read the data.  
+Let’s remember the people behind it.
+

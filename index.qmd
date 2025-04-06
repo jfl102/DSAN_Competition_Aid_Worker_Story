@@ -1,0 +1,61 @@
+---
+title: "Aid Worker Security Incidents"
+format: html
+---
+
+# 🩸 Frontlines of Danger
+
+<p align="center">
+  <img src="img/frontline_aid.jpeg" alt="Aid worker helping in crisis" width="80%">
+</p>
+
+> *“Helping others should never make you a target.”*
+
+And yet — from dusty roads in South Sudan to hospitals in Gaza, **aid workers are being shot at, kidnapped, and killed**.
+
+This project is not just about data.  
+It’s about the people behind the data.
+
+---
+
+## 🔍 What’s the Story?
+
+Since 1997, thousands of violent incidents targeting humanitarian staff have been recorded. The risk has grown, the world has changed — and **the people delivering life-saving aid are now often caught in the crossfire**.
+
+In this project, we ask:
+
+- 🕰️ **When** did this rise in violence begin?
+- 🌍 **Where** are these attacks happening?
+- 👥 **Who** is being harmed — and how?
+- 🎯 **What** can be done to protect them?
+
+---
+
+## 📖 How to Read This Site
+
+This site is structured like a four-part visual story:
+
+| Chapter | What You'll Discover |
+|--------|-----------------------|
+| [1. Temporal Trends](trends.qmd) | The timeline of rising risk |
+| [2. Geographic Hotspots](geography.qmd) | Where aid work turns deadly |
+| [3. Victims & Attacks](victims.qmd) | Who is being harmed — and how |
+| [4. Final Reflections](conclusions.qmd) | What the data teaches us about protecting lives |
+
+---
+
+## 📌 Why It Matters
+
+The mission of humanitarian work is simple: to help.
+
+But the mission can’t be fulfilled if the helpers are unsafe.  
+This story — told with real-world data and powerful visuals — aims to **reframe the conversation**, inform smarter decisions, and **protect those who protect others**.
+
+---
+
+## 🙏 A Note from the Author
+
+This project was created as part of a Data Science & Storytelling competition. It blends technical analysis with narrative to shine a light on a problem too often overlooked.
+
+Thank you for reading — and for caring.
+

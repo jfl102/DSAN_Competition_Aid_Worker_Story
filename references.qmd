@@ -1,0 +1,24 @@
+---
+title: "References"
+format: html
+---
+
+### 📘 External Reports / Background Information
+
+- International Committee of the Red Cross. *Fourth Geneva Convention Relative to the Protection of Civilian Persons in Time of War*.
+- United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA). *Humanitarian Principles*. https://www.unocha.org/our-work/humanitarian-principles
+
+---
+
+### 📸 Image Credits
+
+- "Image on the home page" [Source](https://searchinform.com/infosec-blog/2019/04/14/dlp-systems-what-is-a-dlp-system-and-how-does-it-work/ Information-Security-Incident-Management/) on SEARCHINFORM
+- “Aid workers in the field” [Source](https://www.un.org/en/visitors-service-nairobi/uns-humanitarian-work) on United Nations
+- “Helping hand in crisis” [Source](https://www.dreamstime.com/illustration/helping-hands.html) on dreamtime 
+- “Light through cracks” by [Source](https://stock.adobe.com/search?k=light%20crack) on Adobe Stock
+
+---
+
+### 🧠 Project Context
+
+This website was created for the **Scholarship Competition: Data Visualization & Storytelling** as part of the DSAN program at Georgetown University.

@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "c98bb7a4"
+  },
+  "trends.qmd": {
+    "trends.html": "6c08f43f"
+  },
+  "geography.qmd": {
+    "geography.html": "d5771057"
+  },
+  "victims.qmd": {
+    "victims.html": "0534a6c0"
+  },
+  "conclusions.qmd": {
+    "conclusions.html": "804ab83b"
+  },
+  "references.qmd": {
+    "references.html": "81f1d61f"
+  }
+}

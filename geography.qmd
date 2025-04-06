@@ -1,0 +1,78 @@
+---
+title: "🌍 Mapping the Danger"
+format: html
+---
+
+Knowing when aid workers are attacked is important — but **location matters even more**. Some regions are consistently hostile. Others erupt unpredictably.
+
+This section explores the **geography of harm** using event-level data. Each point on the map represents a location where humanitarian workers were attacked — and in many cases, killed or kidnapped.
+
+By mapping these events, we expose patterns of instability that traditional headlines often miss.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(readr)
+library(dplyr)
+library(leaflet)
+
+# Load data
+df <- read_csv("security_incidents.csv")
+
+# Filter for rows with valid coordinates
+map_df <- df %>%
+  filter(!is.na(Latitude) & !is.na(Longitude)) %>%
+  mutate(
+    popup_text = paste0(
+      "<strong>Country:</strong> ", Country, "<br>",
+      "<strong>Year:</strong> ", Year, "<br>",
+      "<strong>Attack Type:</strong> ", `Means of attack`, "<br>",
+      "<strong>Context:</strong> ", `Attack context`
+    )
+  )
+
+# Create leaflet map
+leaflet(map_df) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    ~Longitude, ~Latitude,
+    radius = 4,
+    color = "#e63946",
+    stroke = FALSE,
+    fillOpacity = 0.6,
+    popup = ~popup_text
+  ) %>%
+  setView(lng = 10, lat = 10, zoom = 2)
+```
+
+---
+
+## 🧭 What the Map Reveals
+
+The map confirms what many field workers already know:
+
+- **Sub-Saharan Africa** and **Middle East** are hotspots for attacks
+- Clusters appear in **Afghanistan**, **DR Congo**, **Syria**, and **South Sudan**
+- Some remote regions (e.g., Mali, Central African Republic) are overrepresented given their size
+
+This geography of risk allows aid agencies to plan **region-specific safety protocols**.
+
+---
+
+## 🚨 Not Just Dots on a Map
+
+Each marker represents not just a location — but an **incident of violence**. Visualizing them on a map makes the scale and spread of danger both **tangible** and **unignorable**.
+
+---
+
+## 👥 What’s Next?
+
+We’ve seen where these attacks happen — but **who exactly is being targeted**, and **how**?
+
+In the next section, we break down:
+- Who is most vulnerable — national vs. international workers?
+- What kinds of attacks cause the most harm?
+- Are there patterns in how aid workers are wounded, killed, or kidnapped?
+
+👉 [Explore the human impact](victims.qmd)
+
+
+

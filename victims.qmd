@@ -1,0 +1,131 @@
+---
+title: "Victims & Attack Patterns"
+format: html
+---
+
+# 👥 The People Behind the Patterns
+
+Humanitarian workers go where others can’t — into war zones, disaster areas, and refugee camps.  
+But when violence erupts, **who pays the highest price?**
+
+This section confronts the human toll of these attacks.  
+Not just where or when they happen — but **who** they hurt, **how** they suffer, and **what it means** for the future of humanitarian work.
+
+---
+
+## 🧑‍⚕️ National vs. International Staff
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(readr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(plotly)
+
+df <- read_csv("security_incidents.csv")
+
+totals <- df %>%
+  summarise(
+    Nationals = sum(`Total nationals`, na.rm = TRUE),
+    Internationals = sum(`Total internationals`, na.rm = TRUE)
+  ) %>%
+  pivot_longer(cols = everything(), names_to = "Worker Type", values_to = "Count")
+
+p1 <- ggplot(totals, aes(x = `Worker Type`, y = Count, fill = `Worker Type`)) +
+  geom_col(show.legend = FALSE) +
+  scale_fill_manual(values = c("Nationals" = "#e63946", "Internationals" = "#a6bddb")) +
+  labs(
+    title = "Who Is Affected Most?",
+    subtitle = "Total number of national vs. international workers affected by attacks",
+    y = "Number of Victims",
+    x = NULL
+  ) +
+  theme_minimal()
+
+ggplotly(p1)
+```
+
+
+---
+
+## 👣 The Invisible Majority
+
+The chart speaks volumes: **national staff are overwhelmingly more affected** by security incidents than their international counterparts.
+
+They are the logisticians, translators, and local health workers — often the first on the scene and the last to leave.
+
+> They take the same risks, but don’t always get the same protection, training, or recognition.
+
+This imbalance raises an ethical question:  
+**Are we doing enough to protect those who carry the heaviest burden?**
+
+---
+
+## 🩸 What Happens to Them?
+
+
+---
+
+### 💥 **Bar Chart: Nature of Harm**
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+impact <- df %>%
+  summarise(
+    Killed = sum(`Total killed`, na.rm = TRUE),
+    Wounded = sum(`Total wounded`, na.rm = TRUE),
+    Kidnapped = sum(`Total kidnapped`, na.rm = TRUE)
+  ) %>%
+  pivot_longer(cols = everything(), names_to = "Outcome", values_to = "Count")
+
+p2 <- ggplot(impact, aes(x = Outcome, y = Count, fill = Outcome)) +
+  geom_col(show.legend = FALSE) +
+  scale_fill_manual(values = c(
+    "Killed" = "#e63946",
+    "Wounded" = "#457b9d",
+    "Kidnapped" = "#f4a261"
+  )) +
+  labs(
+    title = "Nature of Harm",
+    subtitle = "Types of harm aid workers have experienced in attacks",
+    y = "Number of People",
+    x = NULL
+  ) +
+  theme_minimal()
+
+ggplotly(p2)
+```
+
+---
+
+## 🕯️ From Risk to Reality
+
+Being wounded is the most common outcome — but the number of people **killed** or **kidnapped** is staggering.
+
+These aren’t numbers. These are stories of:
+- Drivers ambushed on rural roads
+- Nurses caught in crossfire
+- Field officers abducted while delivering food
+
+Each one reflects a **breach of humanitarian neutrality** — and a growing disregard for international law.
+
+---
+
+## 🧠 Why It Matters
+
+Understanding who gets hurt, and how, is more than academic. It’s the foundation for:
+- Smarter field protocols
+- Targeted safety investments
+- Ethical hiring and risk-sharing policies
+
+This data forces us to face a hard truth:  
+**Risk is not equally shared — but it can be more fairly managed.**
+
+---
+
+## 🧶 What’s Next?
+
+We've followed this story through time, space, and lives affected.
+
+Now, we turn to the final — and most important — chapter:  
+👉 [What should be done?](conclusions.qmd)

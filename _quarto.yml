@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  title: "Aid Worker Security Incidents"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: trends.qmd
+        text: Temporal Trends
+      - href: geography.qmd
+        text: Geographic Hotspots
+      - href: victims.qmd
+        text: Victims & Attacks
+      - href: conclusions.qmd
+        text: Conclusions
+      - href: references.qmd
+        text: Reference
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
