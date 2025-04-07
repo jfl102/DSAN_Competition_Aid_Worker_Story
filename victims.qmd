@@ -8,12 +8,14 @@ format: html
 Humanitarian workers go where others can’t — into war zones, disaster areas, and refugee camps.  
 But when violence erupts, **who pays the highest price?**
 
-This section confronts the human toll of these attacks.  
-Not just where or when they happen — but **who** they hurt, **how** they suffer, and **what it means** for the future of humanitarian work.
+This section follows a scroll-driven path through the human cost of aid work.  
+As you move down, let the data guide the story — one chart, one insight at a time.
 
 ---
 
-## 🧑‍⚕️ National vs. International Staff
+## 🧑‍⚕️ Nationals Bear the Brunt
+
+> First, let’s look at *who* is being harmed.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(readr)
@@ -45,29 +47,17 @@ p1 <- ggplot(totals, aes(x = `Worker Type`, y = Count, fill = `Worker Type`)) +
 ggplotly(p1)
 ```
 
+**National staff** — not international expats — suffer the vast majority of attacks.  
+They’re the ones who stay after the cameras leave.
+
+> This raises a critical question:  
+Are we doing enough to protect those closest to the danger?
 
 ---
 
-## 👣 The Invisible Majority
+## 🩸 What Kind of Harm?
 
-The chart speaks volumes: **national staff are overwhelmingly more affected** by security incidents than their international counterparts.
-
-They are the logisticians, translators, and local health workers — often the first on the scene and the last to leave.
-
-> They take the same risks, but don’t always get the same protection, training, or recognition.
-
-This imbalance raises an ethical question:  
-**Are we doing enough to protect those who carry the heaviest burden?**
-
----
-
-## 🩸 What Happens to Them?
-
-
----
-
-### 💥 **Bar Chart: Nature of Harm**
-
+> Next: What happens to those who are targeted?
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 impact <- df %>%
@@ -96,36 +86,65 @@ p2 <- ggplot(impact, aes(x = Outcome, y = Count, fill = Outcome)) +
 ggplotly(p2)
 ```
 
----
-
-## 🕯️ From Risk to Reality
-
-Being wounded is the most common outcome — but the number of people **killed** or **kidnapped** is staggering.
-
-These aren’t numbers. These are stories of:
-- Drivers ambushed on rural roads
-- Nurses caught in crossfire
-- Field officers abducted while delivering food
-
-Each one reflects a **breach of humanitarian neutrality** — and a growing disregard for international law.
+Most are **wounded**, but thousands have been **killed or kidnapped**.  
+These are not isolated cases — they’re systemic outcomes of conflict and disregard.
 
 ---
 
-## 🧠 Why It Matters
+## 🔥 Do Some Attacks Hurt More?
 
-Understanding who gets hurt, and how, is more than academic. It’s the foundation for:
-- Smarter field protocols
-- Targeted safety investments
-- Ethical hiring and risk-sharing policies
+> Not all attacks lead to the same outcomes. Some are deadlier than others.
 
-This data forces us to face a hard truth:  
-**Risk is not equally shared — but it can be more fairly managed.**
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+attack_summary <- df %>%
+  group_by(`Means of attack`) %>%
+  summarise(
+    Killed = sum(`Total killed`, na.rm = TRUE),
+    Wounded = sum(`Total wounded`, na.rm = TRUE),
+    Kidnapped = sum(`Total kidnapped`, na.rm = TRUE)
+  ) %>%
+  filter(!is.na(`Means of attack`)) %>%
+  pivot_longer(cols = c(Killed, Wounded, Kidnapped), names_to = "Outcome", values_to = "Count")
+
+p3 <- ggplot(attack_summary, aes(x = reorder(`Means of attack`, -Count), y = Count, fill = Outcome)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c(
+    "Killed" = "#e63946",
+    "Wounded" = "#457b9d",
+    "Kidnapped" = "#f4a261"
+  )) +
+  labs(
+    title = "Impact of Different Attack Types",
+    subtitle = "Comparing number of victims by attack method and outcome type",
+    x = "Means of Attack",
+    y = "Number of Victims",
+    fill = "Outcome"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+ggplotly(p3)
+```
+
+This chart shows the harsh truth:
+
+- **Shootings** are the most lethal.
+- **Kidnappings** cause fewer deaths, but more psychological trauma.
+- **Aerial attacks and IEDs** often wound in high numbers — especially in urban areas.
+
+> Aid agencies can use this data to match their response protocols to real-world risk.
 
 ---
 
-## 🧶 What’s Next?
+## 🎯 What It All Means
 
-We've followed this story through time, space, and lives affected.
+We now know:
 
-Now, we turn to the final — and most important — chapter:  
-👉 [What should be done?](conclusions.qmd)
+- **Who** gets hurt: Mostly national staff
+- **How** they’re harmed: Killed, kidnapped, and wounded in large numbers
+- **By what**: A range of violent tactics, some more deadly than others
+
+This isn't just tragedy. It's **a call to act wisely and plan better**.
+
+👉 Let’s take these insights and move into the final step:  
+[🧠 Final Reflections & What Should Be Done →](conclusions.qmd)

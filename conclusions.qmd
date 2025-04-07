@@ -31,27 +31,62 @@ Behind every data point is a moment. Behind every spike, a story.
 
 ---
 
+
 # 🎯 What Should Be Done?
 
 ![](img/helping_hands.png)
 
-This isn’t where the story ends. This is the part where we take what we’ve seen — and decide what to do next.
-
-### 🛡️ Protect Local Staff, Not Just International Ones
-
-They take the same risks. They deserve the same security, training, and escape routes.
-
-### 📊 Use History to Prepare for the Future
-
-We now know that violence follows patterns — conflict flare-ups, election years, regional instability.  
-**Let’s not wait to be surprised.**
-
-### 📢 Demand Respect for Humanitarian Law
-
-The increasing normalization of attacks on aid workers must not be met with silence.  
-The data speaks — but it’s up to us to make sure someone listens.
+Each chart in this project wasn’t just a visual — it was evidence. Here's what those insights demand from us:
 
 ---
+
+### 🛡️ 1. Protect National Staff Who Face the Highest Risks
+
+📊 *From the Victims & Attacks section:*  
+The chart shows that **national staff are far more likely to be victims** than international staff — often by a wide margin.
+
+> 🧠 **Therefore**:  
+Humanitarian agencies must **prioritize protection, training, and evacuation planning for national staff**, not just international hires.
+
+These workers are on the frontlines — and the analysis proves they carry the heaviest burden.
+
+---
+
+### 🗓️ 2. Prepare for Conflict Spikes in Advance
+
+📊 *From the Temporal Trends section:*  
+We identified clear **spikes in violence** during periods of global conflict (e.g., post-2003, 2013, post-2018).
+
+> 🧠 **Therefore**:  
+Organizations should use historical data to **anticipate future spikes** — and **pre-position security support and crisis plans** during conflict anniversaries or known volatile periods.
+
+---
+
+### 🗺️ 3. Deploy Region-Specific Security Resources
+
+📊 *From the Geographic Hotspots map:*  
+Incidents cluster in fragile states like **Afghanistan, DR Congo, Syria, and South Sudan**.
+
+> 🧠 **Therefore**:  
+Aid agencies should **customize safety protocols by region**, with **greater resources** allocated to high-risk countries identified by the data.
+
+This isn’t guesswork — the data shows where the danger is concentrated.
+
+---
+
+### 📣 4. Use Evidence to Advocate for Stronger Protections
+
+📊 *Across all sections:*  
+The scale and scope of attacks show a **systemic disregard for humanitarian neutrality**.
+
+> 🧠 **Therefore**:  
+Leaders should use this data in global forums to **advocate for enforcement of international humanitarian law**, demand accountability for attacks, and **protect aid workers’ legal rights** under the Geneva Conventions.
+
+---
+
+Together, these aren’t just recommendations —  
+They’re **calls to action**, backed by evidence.
+
 
 # 🌍 Why This Matters
 
@@ -64,7 +99,7 @@ Their only protection is the belief that **helping others should never make you 
 And yet — time after time — that belief is betrayed.
 
 This project used data to show where that betrayal happens.  
-Your next job — our next job — is to use those insights to change the ending.
+Your next job — our next job — is to use those insights to change the ending!
 
 ---
 

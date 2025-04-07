@@ -3,7 +3,7 @@ title: "🕰️ Rising Risk: A Timeline of Humanitarian Harm"
 format: html
 ---
 
-Since 1997, aid workers have faced growing danger in their efforts to deliver life-saving assistance. But how has this risk evolved over time?
+Aid workers have faced growing danger in their efforts to deliver life-saving assistance. But how has this risk evolved over time?
 
 Using event-level data from thousands of attacks, we trace the shifting timeline of threats — and reveal a troubling trend.
 

@@ -33,7 +33,7 @@ In this project, we ask:
 
 ## 📖 How to Read This Site
 
-This site is structured like a four-part visual story:
+Below is a quick overview to help you navigate the story:
 
 | Chapter | What You'll Discover |
 |--------|-----------------------|
