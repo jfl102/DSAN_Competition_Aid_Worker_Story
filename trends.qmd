@@ -45,7 +45,6 @@ p <- ggplot(yearly_counts, aes(x = Year, y = Incidents)) +
 ggplotly(p)
 ```
 
-
 ---
 
 ## 🔍 What the Trend Reveals
@@ -61,13 +60,106 @@ We’re not just seeing isolated incidents. We’re seeing **systemic patterns**
 
 ---
 
+## 🔄 How Attack Types Have Changed
+
+Not only are attacks increasing — the way they happen is shifting too. Are shootings still the most common? Are kidnappings rising?
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyr)
+
+# Group by Year and Means of attack
+attack_trends <- df %>%
+  filter(!is.na(`Means of attack`)) %>%
+  group_by(Year, `Means of attack`) %>%
+  summarise(Incidents = n(), .groups = "drop") %>%
+  rename(Attack_Type = `Means of attack`)
+
+# Define a custom color palette
+attack_colors <- c(
+  "Shooting" = "#e63946",
+  "Kidnapping" = "#f4a261",
+  "Bodily assault" = "#e76f51",
+  "Roadside IED" = "#457b9d",
+  "Shelling" = "#a8dadc",
+  "Complex attack" = "#1d3557",
+  "Vehicle-born IED" = "#264653",
+  "Landmine" = "#2a9d8f",
+  "Other Explosives" = "#8ecae6",
+  "Unknown" = "#adb5bd",
+  "Aerial bombardment" = "#ffb703",
+  "Body-borne IED" = "#fb8500",
+  "Rape/sexual assault" = "#6a4c93",
+  "Kidnap-killing" = "#b5179e"
+)
+
+# Plot
+p <- ggplot(attack_trends, aes(x = Year, y = Incidents, fill = Attack_Type)) +
+  geom_col(position = "stack") +
+  scale_fill_manual(values = attack_colors) +
+  labs(
+    title = "How Attack Types Have Shifted Over Time",
+    y = "Number of Incidents",
+    x = "Year",
+    fill = "Attack Type"
+  ) +
+  theme_minimal(base_size = 13)
+
+# Interactive plot
+ggplotly(p)
+```
+
+This stacked bar chart uncovers a complex evolution of attack strategies. In the early 2000s, **shootings and shelling** dominated the landscape. But over time, we've seen a steep rise in **kidnappings** and **bodily assaults**, indicating a shift from remote or military-style attacks to more personal, targeted violence. Meanwhile, the use of IEDs and vehicle-based bombs remains present but relatively limited compared to other methods. This transformation suggests changing conflict dynamics — and changing risks for humanitarians.
+
+---
+
+## 📈 What Happens to the Victims?
+
+Understanding when attacks happen isn’t enough. We also need to ask: **how severe are they?** Are aid workers being wounded more often — or killed? Or taken hostage?
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyr)
+victim_trends <- df %>%
+  group_by(Year) %>%
+  summarise(
+    Killed = sum(`Total killed`, na.rm = TRUE),
+    Wounded = sum(`Total wounded`, na.rm = TRUE),
+    Kidnapped = sum(`Total kidnapped`, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  pivot_longer(cols = -Year, names_to = "Outcome", values_to = "Count")
+
+p_victims <- ggplot(victim_trends, aes(x = Year, y = Count, color = Outcome)) +
+  geom_line(size = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c(
+    "Killed" = "#e63946",
+    "Wounded" = "#457b9d",
+    "Kidnapped" = "#f4a261"
+  )) +
+  labs(
+    title = "Victim Outcomes Over Time",
+    subtitle = "More attacks lead to more harm — but what kind?",
+    x = "Year",
+    y = "Number of Victims",
+    color = "Outcome"
+  ) +
+  theme_minimal()
+
+ggplotly(p_victims)
+```
+
+This line chart tells a sobering story. From 2015 onward, there’s a visible **surge in wounded victims**, aligning with years of high attack frequency. Meanwhile, **fatalities steadily climb until 2023**, where a sharp spike may indicate a deadly escalation — or better reporting. **Kidnappings**, though lower in absolute numbers, appear consistent, confirming a persistent threat. These patterns suggest that while injuries are the most frequent outcome, the **deadliness of attacks is rising**, which should influence how agencies train and equip their teams.
+
+---
+
 ## 🧭 Data Meets Decision-Making
 
-By identifying **when** threats escalate, aid agencies can:
+By identifying **when** threats escalate — and **how** their nature shifts — aid agencies can:
 
 - **Anticipate** future high-risk years based on conflict cycles
-- **Strengthen protocols** in advance
-- **Allocate resources** for staff safety training and evacuation planning
+- **Adapt protocols** to evolving attack types
+- **Allocate resources** to prepare for the most harmful outcomes
 
 This isn’t just analysis — it’s **a call to protect those who protect others.**
 
@@ -78,4 +170,3 @@ This isn’t just analysis — it’s **a call to protect those who protect othe
 Now that we understand *when* aid workers are most at risk, let’s explore the next critical question:
 
 👉 [Where](geography.qmd) is it most dangerous to help?
-

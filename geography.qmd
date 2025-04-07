@@ -57,6 +57,71 @@ This geography of risk allows aid agencies to plan **region-specific safety prot
 
 ---
 
+## 📊 Top 10 Countries by Number of Incidents
+
+Which countries pose the greatest risk to aid workers?
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(plotly)
+
+top_countries <- df %>%
+  group_by(Country) %>%
+  summarise(Incidents = n(), .groups = "drop") %>%
+  top_n(10, Incidents) %>%
+  arrange(desc(Incidents))
+
+p_top <- ggplot(top_countries, aes(x = reorder(Country, Incidents), y = Incidents)) +
+  geom_col(fill = "#e63946") +
+  coord_flip() +
+  labs(
+    title = "Top 10 Countries with the Most Incidents",
+    subtitle = "Where aid workers face the greatest number of attacks",
+    x = NULL,
+    y = "Number of Incidents"
+  ) +
+  theme_minimal() +
+  theme(axis.title.y = element_text(margin = margin(r = 20)))
+
+ggplotly(p_top)
+```
+
+From Afghanistan to South Sudan to Syria, the top ten list reads like a global warning signal. These countries are not only experiencing conflict — they are places where **humanitarian neutrality is being repeatedly violated**. The presence of so many incidents in these zones suggests a breakdown of trust and safety for aid organizations. For field teams, this means these locations require **enhanced security, localized threat assessments, and continual reevaluation of risk protocols**.
+
+---
+
+## 📍 Map of Kidnapping Incidents
+
+Some attacks are deadlier or more complex than others. Let’s isolate **kidnapping** to understand where this specific threat is concentrated.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+kidnap_map <- df %>%
+  filter(`Means of attack` == "Kidnapping", !is.na(Latitude), !is.na(Longitude)) %>%
+  mutate(
+    popup_text = paste0(
+      "<strong>Country:</strong> ", Country, "<br>",
+      "<strong>Year:</strong> ", Year, "<br>",
+      "<strong>Context:</strong> ", `Attack context`
+    )
+  )
+
+leaflet(kidnap_map) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addCircleMarkers(
+    lng = ~Longitude, lat = ~Latitude,
+    radius = 5,
+    color = "#f4a261",
+    stroke = FALSE,
+    fillOpacity = 0.7,
+    popup = ~popup_text
+  ) %>%
+  addLegend("bottomright", colors = "#f4a261", labels = "Kidnapping", title = "Attack Type")
+```
+
+When we zoom in on kidnapping, the story shifts. The **geographic clustering** becomes sharper — places like Iraq, Somalia, and parts of the Sahel light up the map. These aren’t just random abductions. They reflect **organized tactics** in regions where law enforcement is weak, and where humanitarian presence may be politically or financially exploited. For teams operating in these areas, **kidnapping prevention must move from policy to practice** — including route monitoring, local negotiation training, and contingency plans for worst-case scenarios.
+
+---
+
 ## 🚨 Not Just Dots on a Map
 
 Each marker represents not just a location — but an **incident of violence**. Visualizing them on a map makes the scale and spread of danger both **tangible** and **unignorable**.
@@ -73,6 +138,3 @@ In the next section, we break down:
 - Are there patterns in how aid workers are wounded, killed, or kidnapped?
 
 👉 [Explore the human impact](victims.qmd)
-
-
-

@@ -26,11 +26,13 @@ This was never just about data. It was about what the data reveals when you look
 - That **violence against aid workers is rising**, not falling.
 - That this violence is **unevenly distributed**, hitting the same fragile regions again and again.
 - That **national staff** — those who are closest to the mission — are also those who are most often left behind when danger strikes.
+- That **attack methods have evolved** — personal assaults and kidnappings have become more common than remote strikes like shelling or IEDs.
+- That **the impact on victims has escalated** — with sharp rises in the number of wounded and killed in recent years.
+- That **specific countries** like Afghanistan, South Sudan, and Syria are consistently at the top of the list, with **kidnapping threats concentrated in fragile zones** like the Sahel.
 
 Behind every data point is a moment. Behind every spike, a story.
 
 ---
-
 
 # 🎯 What Should Be Done?
 
@@ -62,19 +64,29 @@ Organizations should use historical data to **anticipate future spikes** — and
 
 ---
 
-### 🗺️ 3. Deploy Region-Specific Security Resources
+### 🧨 3. Respond to Changing Forms of Violence
+
+📊 *From the Attack Types timeline:*  
+The chart revealed a marked **increase in bodily assault and kidnapping** over time, while traditional forms like shelling and IEDs have become less common.
+
+> 🧠 **Therefore**:  
+Agencies should **adjust field safety training to match these emerging threats**, including conflict de-escalation, abduction prevention, and post-trauma response.
+
+---
+
+### 🗺️ 4. Deploy Region-Specific Security Resources
 
 📊 *From the Geographic Hotspots map:*  
-Incidents cluster in fragile states like **Afghanistan, DR Congo, Syria, and South Sudan**.
+Incidents cluster in fragile states like **Afghanistan, DR Congo, Syria, and South Sudan**. The kidnapping map shows **geographic targeting** in regions like Iraq and the Sahel.
 
 > 🧠 **Therefore**:  
 Aid agencies should **customize safety protocols by region**, with **greater resources** allocated to high-risk countries identified by the data.
 
-This isn’t guesswork — the data shows where the danger is concentrated.
+In areas prone to kidnapping, **contingency plans and negotiation frameworks** should be considered part of standard preparation.
 
 ---
 
-### 📣 4. Use Evidence to Advocate for Stronger Protections
+### 📣 5. Use Evidence to Advocate for Stronger Protections
 
 📊 *Across all sections:*  
 The scale and scope of attacks show a **systemic disregard for humanitarian neutrality**.
@@ -86,7 +98,6 @@ Leaders should use this data in global forums to **advocate for enforcement of i
 
 Together, these aren’t just recommendations —  
 They’re **calls to action**, backed by evidence.
-
 
 # 🌍 Why This Matters
 
@@ -113,4 +124,3 @@ But behind each row is something more powerful than numbers:
 
 Let’s not just read the data.  
 Let’s remember the people behind it.
-
